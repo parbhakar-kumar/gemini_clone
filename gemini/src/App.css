@@ -1,1 +1,9 @@
-@import "tailwindcss";
+.sidebar{
+    /* justify-content: space-between;
+    display: inline-flex;
+    flex-direction: column; */
+
+}
+.sidebar img{
+    width: 20px;
+}
