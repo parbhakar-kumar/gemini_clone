@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
  
-    fountfamily: Outfit;
+    font-family: Outfit;
+}
+#root{
+    min-height: 100vh;
+    display: flex;
 }
 
+.flex {
+    display: flex;
+}
 
 .sidebar{
     /* justify-content: space-between;
@@ -15,3 +25,25 @@
 .sidebar img{
     width: 20px;
 }
+.main{
+    flex: 1;
+    min-height: 100vh;
+    width: 170vh;
+    padding-bottom: 15vh;
+    position: relative;
+}
+
+
+.main  .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 22px;
+    padding: 20px;
+    color: #585858;
+
+   
+}
+
+

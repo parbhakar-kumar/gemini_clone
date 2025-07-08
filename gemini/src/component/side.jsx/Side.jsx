@@ -5,7 +5,7 @@ import message_icon from '../../assets/message_icon.png'
 import question_icon from '../../assets/question_icon.png'
 import history_icon from '../../assets/history_icon.png'
 import setting_icon from '../../assets/setting_icon.png'
-import { p } from 'motion/react-client'
+
 
 
 function Side() {
@@ -16,7 +16,7 @@ const [extended, setExtended] = useState(false);
 
   return (
     <>
-      <div className="sidebar  flex-col bg-gray-400 w-2xs h-screen justify-between inline-flex p-5">
+      <div className="sidebar flex-col bg-gray-400 w-48 h-screen justify-between flex p-5">
         <div className="uper ">
         <div className="menu m-5">
           <img onClick={()=>setExtended(prev=>!prev)} src={menu_icon} alt="menu" />
