@@ -4,6 +4,9 @@ import compass from "../../assets/compass.png";
 import bulb_icon from "../../assets/bulb_icon.png";
 import message_icon from "../../assets/message_icon.png";
 import code_icon from "../../assets/code_icon.png";
+import gallery_icon from "../../assets/gallery_icon.png";
+import mic_icon from "../../assets/mic_icon.png";
+import send_icon from "../../assets/send_icon.png";
 function Main() {
   return (
     <div className="main  ">
@@ -44,15 +47,22 @@ function Main() {
           </div>
         </div>
 
-        <div className="main_bottom">
-          <div className="search-box">
-            <input type="text" />
-            <div>
-              <img src="" alt="" />
-              <img src="" alt="" />
-              <img src="" alt="" />
+        <div className="main_bottom absolute bottom-10 w-full max-w-[1000px] px-7 mx-auto">
+          <div className="search-box flex items-center justify-between gap[20px] bg-[#f0f4f9] w-3xl px-5py-2.5 rounded-[50px]">
+            <input className=" flex-1 bg-transparent border-none outline-none p-[8px] text-[18px] " placeholder="Enter a prompt hear" type="text" />
+            <div className="w-[24px] cursor-pointer flex ">
+              <img className="" src={gallery_icon} alt="" />
+              <img className="" src={mic_icon} alt="" />
+              <img className="" src={send_icon} alt="" />
+            
             </div>
           </div>
+           <div className="bottom-info text-[13px] mt-10  align-center font-light-300">
+                <p>
+                Gemini may display inaccurate info including about pepole-check
+                its esponses. your privacy and Gemieni apps
+              </p>
+            </div>
         </div>
       </div>
     </div>
