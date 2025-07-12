@@ -1,12 +1,10 @@
-
-
 import {
   GoogleGenAI,
 } from '@google/genai';
 
 async function main(prompt) {
   const ai = new GoogleGenAI({
-    apiKey: process.env.AIzaSyDK2bBLqrUzH5zfDTh5SiG6DFKlmxqW334,
+    apiKey: 'AIzaSyDK2bBLqrUzH5zfDTh5SiG6DFKlmxqW334',
   });
   const tools = [
     {
@@ -38,10 +36,12 @@ async function main(prompt) {
     config,
     contents,
   });
-  let fileIndex = 0;
+  let accumulatedText = "";
   for await (const chunk of response) {
     console.log(chunk.text);
+    accumulatedText += chunk.text;
   }
+  return accumulatedText;
 }
 
 export default main;
